@@ -1,0 +1,18 @@
+<h2>********* Welcome to the longest word-game! *********</h2>
+<h3>Here is your grid:</h3>
+<h4> <%=  @letters.split(" ") %> </h4>
+
+<h4>Whats the longuest word you can find?</h4>
+
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<form action="new" method="post" data-turbo="false">
+<input type="text" name="word">
+</form>
+
+
+
+<h2> ******** Now your results ******** </h2>
+<h4>Your word: <%`${}`%> </h4>
+<h4>Time Taken to answer: 12.07916</h4>
+<h4>Your score: 3.194722666666667</h4>
+<h4>Message: Well Done!</h4>
